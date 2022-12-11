@@ -1,0 +1,66 @@
+#cart_show {
+	float: left;
+	overflow: hidden;
+}
+
+#cart_show .triangle-up {
+	display: none;
+	outline: none;
+}
+
+.triangle-up {
+	z-index: 1;
+	display: none;
+	width: 0;
+	height: 0;
+	border-left: 50px solid transparent;
+	border-right: 50px solid transparent;
+	border-bottom: 15px solid #ffff;
+	position: absolute;
+	bottom: -1px;
+}
+/* nút dropdown */
+#cart_show .nut_cart {
+	font-size: 16px;
+	border: none;
+	outline: none;
+	color: #5a4e4e;
+	padding: 14px 35px;
+	background-color: inherit;
+	font-family: inherit;
+	margin: 0;
+}
+
+/* thêm màu background khi nút dropdown khi hover */
+
+/* Ẩn nội dung dropdown*/
+.noidung_dropdown {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+/* thiết lập style cho đường dẫn bên trong dropdown */
+.noidung_dropdown a {
+	float: none;
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+	text-align: left;
+}
+
+/* chọn background cho đường dẫn bên trong dropdown khi hover*/
+.noidung_dropdown a:hover {
+	background-color: #ddd;
+}
+#dropdown:after .triangle-up, #dropdown:after .noidung_dropdown {
+	display: block;
+}
+/* Hiển thị nội dung dropdown khi được hover */
+#dropdown:hover .triangle-up, #dropdown:hover .noidung_dropdown {
+	display: block;
+}
